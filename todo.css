@@ -1,0 +1,85 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: "Lobster", sans-serif; 
+} 
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(155deg ,#0c2461, #7afa61 , #002765  ); 
+     padding: 10px;
+}
+ .todo{
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  background-color: white;
+  border-radius: 10px;
+ }
+ .todo h2{
+   color: #002765;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+ .todo h2 img{
+  width: 30px;
+  margin-left: 10px;
+ }
+ .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #46e2da;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+ }
+ input{
+   flex: 1;
+   border:none;
+    font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   outline: none; 
+   padding: 10px ;
+   background: transparent;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #002765;
+    color: antiquewhite;
+    font-size: 16px;
+    border-radius: 40px;
+  }
+  ul li{ 
+    list-style: none;
+    font-size: 17px; 
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+  }
+  ul li ::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("circletodo.jpeg");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  ul li.checked{
+     color: palevioletred;
+     text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url( "tick.jpeg");
+  } 
+    
